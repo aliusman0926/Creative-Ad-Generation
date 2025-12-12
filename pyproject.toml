@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creative-ad-generation"
+version = "0.1.0"
+description = "Creative Ad Generation platform"
+authors = [{ name = "Creative Ad Team" }]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.111.0",
+    "pydantic==1.10.14",
+    "apache-airflow==2.9.1",
+    "mlflow==2.13.0",
+    "prometheus-client==0.20.0",
+    "kubernetes==29.0.0",
+    "python-dotenv==1.0.1",
+    "pytest==8.2.2",
+    "uvicorn==0.30.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black==24.4.2",
+    "isort==5.13.2",
+    "ruff==0.5.5",
+    "pre-commit==3.7.1",
+    "build==1.2.1",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+include = "src/.*\.py|tests/.*\.py"
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP", "B", "PL" ]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
