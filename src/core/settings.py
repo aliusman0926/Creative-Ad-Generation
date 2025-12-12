@@ -5,7 +5,14 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ModuleNotFoundError:  # pragma: no cover - best-effort fallback for tests
+    def load_dotenv(*_: Any, **__: Any) -> bool:  # type: ignore
+        """No-op fallback when python-dotenv is unavailable."""
+
+        return False
+
 from pydantic import BaseSettings, Field
 
 # Load environment variables from a .env file located at the project root.
