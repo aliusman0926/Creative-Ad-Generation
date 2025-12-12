@@ -8,6 +8,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from src.data.ingest import (
+    DEFAULT_SOURCE_URL,
     LocalObjectStore,
     normalize_record,
     parse_csv,
@@ -20,7 +21,7 @@ from src.data.ingest import (
 
 def _fetch_csv(**context) -> str:
     source_url = context["params"].get("source_url") or os.getenv(
-        "PRODUCT_SOURCE_URL", "https://example.com/products.csv"
+        "PRODUCT_SOURCE_URL", DEFAULT_SOURCE_URL
     )
     return load_csv_from_url(source_url)
 

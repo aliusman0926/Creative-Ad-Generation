@@ -16,6 +16,13 @@ from urllib.request import urlopen
 from pydantic import BaseModel, ValidationError, validator
 
 
+DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "sources"
+# Default catalog is a curated e-commerce feed (titles + short descriptions)
+# suitable for ad-creative generation experiments.
+DEFAULT_SOURCE_PATH = DATA_ROOT / "ecommerce_product_catalog.csv"
+DEFAULT_SOURCE_URL = DEFAULT_SOURCE_PATH.as_uri()
+
+
 class ProductRecord(BaseModel):
     """Typed representation of a product row."""
 
@@ -90,11 +97,11 @@ def normalize_record(raw: dict) -> dict:
 
     normalized = {
         "product_id": clean(raw.get("product_id") or raw.get("id") or raw.get("sku") or ""),
-        "name": clean(raw.get("name") or ""),
+        "name": clean(raw.get("name") or raw.get("title") or ""),
         "price": float(cleaned_price),
-        "currency": (clean(raw.get("currency")) or "USD"),
+        "currency": (clean(raw.get("currency")) or "USD").upper(),
         "category": clean(raw.get("category") or raw.get("segment")),
-        "description": clean(raw.get("description")),
+        "description": clean(raw.get("description") or raw.get("short_description")),
     }
     return normalized
 

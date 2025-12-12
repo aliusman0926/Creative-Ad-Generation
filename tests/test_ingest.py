@@ -1,8 +1,10 @@
 import pytest
 
 from src.data.ingest import (
+    DEFAULT_SOURCE_URL,
     LocalObjectStore,
     ProductRecord,
+    ingest_from_url,
     normalize_record,
     parse_csv,
     serialize_records_to_csv,
@@ -18,7 +20,7 @@ def test_parse_csv_and_normalize():
     assert normalized[0]["product_id"] == "001"
     assert normalized[0]["name"] == "Sample"
     assert normalized[0]["price"] == 12.34
-    assert normalized[0]["currency"] == "usd"
+    assert normalized[0]["currency"] == "USD"
 
 
 def test_validate_records_enforces_schema():
