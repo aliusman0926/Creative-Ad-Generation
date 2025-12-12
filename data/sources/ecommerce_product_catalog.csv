@@ -1,0 +1,13 @@
+product_id,name,price,currency,category,description
+SKU-001,Apple AirPods Pro (2nd Generation),249,USD,Audio,Wireless earbuds with active noise cancellation and personalized spatial audio for iOS devices.
+SKU-002,Sony WH-1000XM5 Headphones,398,USD,Audio,Flagship over-ear headphones with industry-leading noise cancelling and 30-hour battery life.
+SKU-003,Instant Pot Duo 7-in-1,99.95,USD,Kitchen,"Multi-use pressure cooker that sautés, steams, slow cooks, and keeps food warm."
+SKU-004,Ninja Professional Blender 1000,89.99,USD,Kitchen,Countertop blender with a 72-oz pitcher and Total Crushing blades for smoothies.
+SKU-005,Kindle Paperwhite 11th Gen,159.99,USD,Electronics,6.8-inch glare-free e-reader with adjustable warm light and weeks-long battery life.
+SKU-006,Logitech MX Master 3S Mouse,99.99,USD,Computers,Ergonomic wireless mouse with MagSpeed scroll wheel and silent clicks for precision work.
+SKU-007,Google Nest Mini (2nd Gen),49,USD,Smart Home,Compact smart speaker with Google Assistant for voice control and streaming music.
+SKU-008,Fitbit Charge 6 Fitness Tracker,159.95,USD,Fitness,"Health and fitness tracker with heart rate monitoring, built-in GPS, and Google Maps directions."
+SKU-009,Levi's 501 Original Fit Jeans,79.5,USD,Apparel,Iconic straight-leg jeans made from durable cotton denim with button fly closure.
+SKU-010,Sephora Collection Lip Stain,15,USD,Beauty,Long-wear matte liquid lipstick with high pigment and comfortable lightweight feel.
+SKU-011,Patagonia Better Sweater Fleece,139,USD,Apparel,Full-zip fleece jacket made with recycled polyester and a sweater-knit exterior.
+SKU-012,Calphalon Premier Nonstick Fry Pan Set,129.99,USD,Kitchen,Hard-anodized aluminum fry pans with durable nonstick coating and stay-cool handles.
