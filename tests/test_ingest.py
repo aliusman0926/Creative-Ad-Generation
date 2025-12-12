@@ -50,3 +50,14 @@ def test_serialize_and_store(tmp_path):
     content = destination.read_text(encoding="utf-8")
     assert "product_id" in content
     assert "Alpha" in content
+
+
+def test_ingest_from_real_source(tmp_path):
+    object_store = LocalObjectStore(tmp_path / "bucket")
+    destination = ingest_from_url(DEFAULT_SOURCE_URL, object_store)
+
+    assert destination.exists()
+    csv_text = destination.read_text(encoding="utf-8")
+    assert "AirPods Pro" in csv_text
+    assert "description" in csv_text.splitlines()[0]
+    assert "product_id" in csv_text.splitlines()[0]
