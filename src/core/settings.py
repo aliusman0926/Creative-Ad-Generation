@@ -27,6 +27,19 @@ class Settings(BaseSettings):
     debug: bool = Field(False, description="Enable debug mode")
     api_host: str = Field("0.0.0.0", description="Host interface for local API server")
     api_port: int = Field(8000, description="Port for local API server")
+    mlflow_tracking_uri: str | None = Field(
+        None, description="Optional MLflow tracking URI used when loading models"
+    )
+    mlflow_registered_model_name: str | None = Field(
+        "creative-ad-generator", description="Registered MLflow model name to load"
+    )
+    model_artifact_path: str = Field(
+        "artifacts/model",
+        description=(
+            "Local fallback path for a packaged model artifact, used when a registered"
+            " MLflow model is unavailable"
+        ),
+    )
 
     class Config:
         env_file = ".env"
