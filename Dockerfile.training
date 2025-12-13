@@ -1,0 +1,44 @@
+# Builder stage shared with the training image
+FROM python:3.10-slim AS builder
+
+ENV VIRTUAL_ENV=/opt/venv \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python -m venv "$VIRTUAL_ENV"
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+WORKDIR /app
+COPY requirements.txt pyproject.toml ./
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
+
+COPY src ./src
+RUN pip install --no-cache-dir -e .
+
+# Runtime stage designed for ad-hoc training or MLflow runs
+FROM python:3.10-slim AS runtime
+ENV VIRTUAL_ENV=/opt/venv \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder "$VIRTUAL_ENV" "$VIRTUAL_ENV"
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+
+WORKDIR /app
+COPY src ./src
+COPY docker/entrypoints/training.sh ./docker/entrypoints/training.sh
+COPY pyproject.toml requirements.txt ./
+
+HEALTHCHECK --interval=1m --timeout=5s --start-period=20s --retries=3 \
+    CMD ["python", "-c", "import importlib; importlib.import_module('mlflow'); importlib.import_module('torch')"]
+
+ENTRYPOINT ["/app/docker/entrypoints/training.sh"]
