@@ -22,6 +22,19 @@ def test_split_creative_samples(tmp_path: Path):
     assert split.test[0].title != split.test[1].title
 
 
+def test_split_creative_samples_minimum_counts():
+    samples = [
+        CreativeSample(title=f"Title {i}", description="Desc", creative_text="Creative")
+        for i in range(3)
+    ]
+
+    split = split_creative_samples(samples, val_size=0.2, test_size=0.0, seed=7)
+
+    # val_size > 0 should yield a non-empty validation split for small datasets
+    assert len(split.val) == 1
+    assert len(split.train) == 2
+
+
 def test_load_creative_samples(tmp_path: Path):
     csv_path = tmp_path / "dataset.csv"
     csv_path.write_text(

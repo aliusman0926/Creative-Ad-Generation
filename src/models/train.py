@@ -95,7 +95,10 @@ def train_model(config: TrainingConfig) -> dict[str, Any]:
     """Train the model and log results to MLflow."""
 
     if config.mlflow_tracking_uri:
-        mlflow.set_tracking_uri(config.mlflow_tracking_uri)
+        tracking_uri = config.mlflow_tracking_uri
+        if tracking_uri.startswith("file://") or "://" not in tracking_uri:
+            tracking_uri = Path(tracking_uri.replace("file://", "")).resolve().as_uri()
+        mlflow.set_tracking_uri(tracking_uri)
     mlflow.set_experiment(config.mlflow_experiment)
 
     samples = _load_samples(config)

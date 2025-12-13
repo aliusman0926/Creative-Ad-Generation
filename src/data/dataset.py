@@ -85,6 +85,8 @@ def split_creative_samples(
         raise ValueError("val_size and test_size must be between 0 and 1")
     if val_size + test_size >= 1:
         raise ValueError("val_size + test_size must be less than 1")
+    if len(samples) == 0:
+        raise ValueError("At least one sample is required to perform a split")
 
     rng = random.Random(seed)
     shuffled = list(samples)
@@ -93,6 +95,19 @@ def split_creative_samples(
     total = len(shuffled)
     test_count = int(total * test_size)
     val_count = int(total * val_size)
+
+    # Ensure requested splits are non-empty when a proportion > 0 is provided, while keeping
+    # at least one training example available for very small datasets.
+    if test_size > 0 and test_count == 0:
+        test_count = 1
+    if val_size > 0 and val_count == 0:
+        val_count = 1
+
+    while test_count + val_count >= total and (test_count > 0 or val_count > 0):
+        if val_count >= test_count and val_count > 0:
+            val_count -= 1
+        elif test_count > 0:
+            test_count -= 1
 
     test_split = shuffled[:test_count]
     val_split = shuffled[test_count : test_count + val_count]
