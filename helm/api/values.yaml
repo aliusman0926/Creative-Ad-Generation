@@ -1,0 +1,69 @@
+replicaCount: 1
+
+image:
+  repository: creative-ad-api
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: true
+  name: ""
+  annotations: {}
+
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/path: /metrics
+  prometheus.io/port: "8000"
+
+podSecurityContext: {}
+securityContext: {}
+
+service:
+  type: ClusterIP
+  port: 8000
+  targetPort: 8000
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8000"
+    prometheus.io/path: /metrics
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations: {}
+  hosts:
+    - host: api.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+config:
+  apiHost: "0.0.0.0"
+  apiPort: 8000
+  mlflowTrackingUri: "http://mlflow:5000"
+  modelArtifactPath: "/app/artifacts/model"
+
+secret:
+  create: true
+  awsAccessKeyId: "minioadmin"
+  awsSecretAccessKey: "minioadmin"
+  awsDefaultRegion: "us-east-1"
+
+extraEnv: []
+extraEnvFrom: []
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 70
+  targetMemoryUtilizationPercentage: 80
+
+volumeMounts: []
+volumes: []

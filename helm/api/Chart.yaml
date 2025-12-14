@@ -1,0 +1,7 @@
+apiVersion: v2
+name: creative-ad-api
+description: Helm chart for the Creative Ad Generation API
+version: 0.1.0
+appVersion: "0.1.0"
+type: application
+dependencies: []
