@@ -3,17 +3,53 @@
 from __future__ import annotations
 
 import logging
+from time import perf_counter
 from pathlib import Path
 from typing import Any
 
 import mlflow
 from fastapi import FastAPI, HTTPException, status
+from fastapi.responses import Response
 from pydantic import BaseModel, Field, validator
+from prometheus_client import (
+    CONTENT_TYPE_LATEST,
+    Counter,
+    Gauge,
+    Histogram,
+    generate_latest,
+)
 
 from ..core import configure_logging, settings
 
 configure_logging()
 logger = logging.getLogger(__name__)
+
+REQUEST_LATENCY = Histogram(
+    "api_request_latency_seconds",
+    "Latency of API requests",
+    labelnames=["endpoint", "method", "status_code"],
+)
+REQUEST_COUNT = Counter(
+    "api_requests_total",
+    "Throughput of API endpoints",
+    labelnames=["endpoint", "method", "status_code"],
+)
+REQUEST_ERRORS = Counter(
+    "api_request_errors_total",
+    "Count of API responses considered errors",
+    labelnames=["endpoint", "method", "status_code"],
+)
+QUALITY_SCORE = Histogram(
+    "api_content_quality_score",
+    "Distribution of generated content quality scores",
+    labelnames=["endpoint"],
+    buckets=(0, 25, 50, 60, 70, 80, 90, 100),
+)
+INFLIGHT_REQUESTS = Gauge(
+    "api_requests_in_progress",
+    "In-flight API requests",
+    labelnames=["endpoint", "method"],
+)
 
 
 class GenerateAdRequest(BaseModel):
@@ -142,6 +178,35 @@ def _get_model() -> Any:
         ) from exc
 
 
+@app.middleware("http")
+async def metrics_middleware(request, call_next):  # type: ignore[override]
+    """Collect latency, throughput, and error metrics for incoming requests."""
+
+    start_time = perf_counter()
+    endpoint = request.url.path
+    method = request.method
+    INFLIGHT_REQUESTS.labels(endpoint=endpoint, method=method).inc()
+    try:
+        response = await call_next(request)
+    except Exception:
+        duration = perf_counter() - start_time
+        REQUEST_LATENCY.labels(endpoint=endpoint, method=method, status_code="500").observe(duration)
+        REQUEST_COUNT.labels(endpoint=endpoint, method=method, status_code="500").inc()
+        REQUEST_ERRORS.labels(endpoint=endpoint, method=method, status_code="500").inc()
+        INFLIGHT_REQUESTS.labels(endpoint=endpoint, method=method).dec()
+        raise
+
+    duration = perf_counter() - start_time
+    status_code = str(response.status_code)
+    REQUEST_LATENCY.labels(endpoint=endpoint, method=method, status_code=status_code).observe(duration)
+    REQUEST_COUNT.labels(endpoint=endpoint, method=method, status_code=status_code).inc()
+    if response.status_code >= 500:
+        REQUEST_ERRORS.labels(endpoint=endpoint, method=method, status_code=status_code).inc()
+
+    INFLIGHT_REQUESTS.labels(endpoint=endpoint, method=method).dec()
+    return response
+
+
 @app.post("/generate_ad", response_model=GenerateAdResponse, tags=["generation"])
 def generate_ad(request: GenerateAdRequest) -> GenerateAdResponse:
     """Generate creative ad text with optional layout hints."""
@@ -154,4 +219,13 @@ def generate_ad(request: GenerateAdRequest) -> GenerateAdResponse:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc)) from exc
 
     quality = evaluate_content_quality(creative_text)
+    QUALITY_SCORE.labels(endpoint="/generate_ad").observe(quality.readability_score)
     return GenerateAdResponse(creative_text=creative_text, layout_hint=layout_hint, quality=quality)
+
+
+@app.get("/metrics", tags=["monitoring"])
+def metrics() -> Response:
+    """Expose Prometheus metrics for scraping."""
+
+    payload = generate_latest()
+    return Response(content=payload, media_type=CONTENT_TYPE_LATEST)

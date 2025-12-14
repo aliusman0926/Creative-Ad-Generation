@@ -1,0 +1,79 @@
+{
+  "apiVersion": 1,
+  "groups": [
+    {
+      "name": "creative-ad-latency",
+      "folder": "Creative Ad Generation",
+      "interval": "1m",
+      "rules": [
+        {
+          "uid": "latency-sla-breach",
+          "title": "API latency p95 above 1.5s",
+          "condition": "A",
+          "data": [
+            {
+              "refId": "A",
+              "relativeTimeRange": {
+                "from": 300,
+                "to": 0
+              },
+              "datasourceUid": "prometheus",
+              "model": {
+                "expr": "histogram_quantile(0.95, sum(rate(api_request_latency_seconds_bucket{endpoint=\"/generate_ad\"}[5m])) by (le)) > 1.5",
+                "intervalMs": 60000,
+                "legendFormat": "",
+                "refId": "A"
+              }
+            }
+          ],
+          "noDataState": "NoData",
+          "execErrState": "Error",
+          "for": "5m",
+          "annotations": {
+            "summary": "p95 latency above SLA for /generate_ad"
+          },
+          "labels": {
+            "severity": "critical"
+          }
+        }
+      ]
+    },
+    {
+      "name": "creative-ad-quality",
+      "folder": "Creative Ad Generation",
+      "interval": "1m",
+      "rules": [
+        {
+          "uid": "quality-drop",
+          "title": "Median quality score below 70",
+          "condition": "A",
+          "data": [
+            {
+              "refId": "A",
+              "relativeTimeRange": {
+                "from": 300,
+                "to": 0
+              },
+              "datasourceUid": "prometheus",
+              "model": {
+                "expr": "histogram_quantile(0.5, sum(rate(api_content_quality_score_bucket{endpoint=\"/generate_ad\"}[5m])) by (le)) < 70",
+                "intervalMs": 60000,
+                "legendFormat": "",
+                "refId": "A"
+              }
+            }
+          ],
+          "noDataState": "NoData",
+          "execErrState": "Error",
+          "for": "10m",
+          "annotations": {
+            "summary": "Generated ad quality dipped below healthy threshold"
+          },
+          "labels": {
+            "severity": "warning"
+          }
+        }
+      ]
+    }
+  ]
+}
