@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover - best-effort fallback for tests
 
         return False
 
-from pydantic import BaseSettings, Field
+from pydantic.v1 import BaseSettings, Field
 
 # Load environment variables from a .env file located at the project root.
 load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")

@@ -6,7 +6,24 @@ import logging
 import os
 import sqlite3
 from datetime import datetime, timedelta
+import sys
 from pathlib import Path
+
+# --- ensure project root (the folder that contains "src") is on sys.path ---
+DAG_FILE = Path(__file__).resolve()
+
+project_root = None
+for p in [DAG_FILE.parent, *DAG_FILE.parents]:
+    if (p / "src").is_dir():
+        project_root = p
+        break
+
+if project_root is not None:
+    sys.path.insert(0, str(project_root))
+else:
+    # Fallback for common Airflow docker layout if you mount src to /opt/airflow/src
+    sys.path.insert(0, "/opt/airflow")
+
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator

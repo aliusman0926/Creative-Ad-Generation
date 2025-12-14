@@ -11,6 +11,24 @@ from airflow.operators.python import PythonOperator
 from airflow.sensors.filesystem import FileSensor
 from mlflow.tracking import MlflowClient
 
+from pathlib import Path
+import sys
+
+# --- ensure project root (the folder that contains "src") is on sys.path ---
+DAG_FILE = Path(__file__).resolve()
+
+project_root = None
+for p in [DAG_FILE.parent, *DAG_FILE.parents]:
+    if (p / "src").is_dir():
+        project_root = p
+        break
+
+if project_root is not None:
+    sys.path.insert(0, str(project_root))
+else:
+    # Fallback for common Airflow docker layout if you mount src to /opt/airflow/src
+    sys.path.insert(0, "/opt/airflow")
+
 from src.models.train import TrainingConfig, train_model
 
 logger = logging.getLogger(__name__)

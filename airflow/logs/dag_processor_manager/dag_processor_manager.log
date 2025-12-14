@@ -1,0 +1,1030 @@
+[2025-12-14T11:11:16.219+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-14T11:11:16.222+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-14T11:11:16.230+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-14T11:11:16.233+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T11:11:16.386+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T11:11:16.728+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/batch_inference.py    163  0.13s             0           0
+/opt/airflow/dags/ingest_products.py                           0           0
+/opt/airflow/dags/retrain.py            160  0.16s             0           0
+================================================================================
+[2025-12-14T11:11:47.444+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    178  0.01s             0           1  0.41s           2025-12-14T11:11:16
+/opt/airflow/dags/ingest_products.py                           0           1  0.31s           2025-12-14T11:11:17
+/opt/airflow/dags/retrain.py            175  0.03s             0           1  0.31s           2025-12-14T11:11:16
+================================================================================
+[2025-12-14T11:12:18.111+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    193  0.01s             0           1  0.15s           2025-12-14T11:11:47
+/opt/airflow/dags/retrain.py            190  0.03s             0           1  0.14s           2025-12-14T11:11:47
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T11:11:47
+================================================================================
+[2025-12-14T11:12:48.823+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    208  0.01s             0           1  0.16s           2025-12-14T11:12:18
+/opt/airflow/dags/retrain.py            205  0.03s             0           1  0.15s           2025-12-14T11:12:18
+/opt/airflow/dags/ingest_products.py                           0           1  0.13s           2025-12-14T11:12:18
+================================================================================
+[2025-12-14T11:13:19.606+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    223  0.01s             0           1  0.15s           2025-12-14T11:12:48
+/opt/airflow/dags/retrain.py            220  0.02s             0           1  0.14s           2025-12-14T11:12:48
+/opt/airflow/dags/ingest_products.py                           0           1  0.13s           2025-12-14T11:12:49
+================================================================================
+[2025-12-14T11:13:50.484+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    238  0.01s             0           1  0.13s           2025-12-14T11:13:19
+/opt/airflow/dags/retrain.py            235  0.04s             0           1  0.13s           2025-12-14T11:13:19
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T11:13:19
+================================================================================
+[2025-12-14T11:14:21.391+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    253  0.02s             0           1  0.17s           2025-12-14T11:13:50
+/opt/airflow/dags/retrain.py            250  0.05s             0           1  0.16s           2025-12-14T11:13:50
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T11:13:50
+================================================================================
+[2025-12-14T11:14:52.213+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    268  0.01s             0           1  0.27s           2025-12-14T11:14:21
+/opt/airflow/dags/retrain.py            265  0.03s             0           1  0.25s           2025-12-14T11:14:21
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T11:14:21
+================================================================================
+[2025-12-14T11:15:22.945+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    283  0.01s             0           1  0.17s           2025-12-14T11:14:52
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T11:14:52
+/opt/airflow/dags/retrain.py            280  0.04s             0           1  0.15s           2025-12-14T11:14:52
+================================================================================
+[2025-12-14T11:15:53.602+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py            295  0.05s             0           1  0.14s           2025-12-14T11:15:23
+/opt/airflow/dags/batch_inference.py    298  0.01s             0           1  0.13s           2025-12-14T11:15:23
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T11:15:23
+================================================================================
+[2025-12-14T11:16:16.301+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T11:16:16.363+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T11:16:23.646+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.26s           2025-12-14T11:15:53
+/opt/airflow/dags/retrain.py                                   0           1  0.24s           2025-12-14T11:15:53
+/opt/airflow/dags/ingest_products.py                           0           1  0.21s           2025-12-14T11:15:54
+================================================================================
+[2025-12-14T11:16:54.235+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.14s           2025-12-14T11:16:24
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:16:24
+/opt/airflow/dags/ingest_products.py                           0           1  0.13s           2025-12-14T11:16:24
+================================================================================
+[2025-12-14T11:17:24.882+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.15s           2025-12-14T11:16:55
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:16:55
+/opt/airflow/dags/ingest_products.py                           0           1  0.13s           2025-12-14T11:16:55
+================================================================================
+[2025-12-14T11:17:55.601+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.14s           2025-12-14T11:17:26
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T11:17:26
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T11:17:26
+================================================================================
+[2025-12-14T11:18:25.664+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.27s           2025-12-14T11:17:57
+/opt/airflow/dags/batch_inference.py                           0           1  0.22s           2025-12-14T11:17:56
+/opt/airflow/dags/retrain.py                                   0           1  0.21s           2025-12-14T11:17:56
+================================================================================
+[2025-12-14T11:18:55.654+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.19s           2025-12-14T11:18:27
+/opt/airflow/dags/batch_inference.py                           0           1  0.19s           2025-12-14T11:18:27
+/opt/airflow/dags/ingest_products.py                           0           1  0.11s           2025-12-14T11:18:27
+================================================================================
+[2025-12-14T11:19:25.943+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.20s           2025-12-14T11:18:58
+/opt/airflow/dags/retrain.py                                   0           1  0.17s           2025-12-14T11:18:58
+/opt/airflow/dags/ingest_products.py                           0           1  0.15s           2025-12-14T11:18:58
+================================================================================
+[2025-12-14T11:19:56.733+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.17s           2025-12-14T11:19:29
+/opt/airflow/dags/batch_inference.py                           0           1  0.14s           2025-12-14T11:19:29
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T11:19:29
+================================================================================
+[2025-12-14T11:20:27.457+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.13s           2025-12-14T11:19:59
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T11:19:59
+/opt/airflow/dags/ingest_products.py                           0           1  0.11s           2025-12-14T11:20:00
+================================================================================
+[2025-12-14T11:20:58.279+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.18s           2025-12-14T11:20:52
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:20:30
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T11:20:30
+================================================================================
+[2025-12-14T11:21:16.758+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T11:21:16.838+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T11:21:29.123+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.14s           2025-12-14T11:21:01
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:21:01
+/opt/airflow/dags/batch_inference.py                           0           1  0.10s           2025-12-14T11:21:23
+================================================================================
+[2025-12-14T11:21:59.969+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.16s           2025-12-14T11:21:53
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T11:21:32
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T11:21:32
+================================================================================
+[2025-12-14T11:22:30.809+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.16s           2025-12-14T11:22:10
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:22:03
+/opt/airflow/dags/ingest_products.py                           0           1  0.13s           2025-12-14T11:22:03
+================================================================================
+[2025-12-14T11:23:00.873+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T11:22:34
+/opt/airflow/dags/retrain.py                                   0           1  0.16s           2025-12-14T11:22:34
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T11:22:41
+================================================================================
+[2025-12-14T11:23:30.978+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.38s           2025-12-14T11:23:04
+/opt/airflow/dags/retrain.py                                   0           1  0.27s           2025-12-14T11:23:04
+/opt/airflow/dags/batch_inference.py                           0           1  0.19s           2025-12-14T11:23:02
+================================================================================
+[2025-12-14T11:24:01.688+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.15s           2025-12-14T11:23:35
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T11:23:35
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T11:23:33
+================================================================================
+[2025-12-14T12:16:11.870+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-14T12:16:11.881+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-14T12:16:11.885+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-14T12:16:11.895+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:16:12.253+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:16:12.854+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/batch_inference.py    160  0.33s             0           0
+/opt/airflow/dags/ingest_products.py                           0           0
+/opt/airflow/dags/retrain.py            163  0.16s             0           0
+================================================================================
+[2025-12-14T12:16:43.638+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    175  0.04s             0           1  0.63s           2025-12-14T12:16:13
+/opt/airflow/dags/retrain.py            178  0.01s             0           1  0.61s           2025-12-14T12:16:13
+/opt/airflow/dags/ingest_products.py                           0           1  0.39s           2025-12-14T12:16:13
+================================================================================
+[2025-12-14T12:17:14.657+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    190  0.04s             0           1  0.37s           2025-12-14T12:16:43
+/opt/airflow/dags/retrain.py            193  0.01s             0           1  0.25s           2025-12-14T12:16:43
+/opt/airflow/dags/ingest_products.py                           0           1  0.20s           2025-12-14T12:16:44
+================================================================================
+[2025-12-14T12:17:45.320+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py            208  0.01s             0           1  0.30s           2025-12-14T12:17:14
+/opt/airflow/dags/batch_inference.py    205  0.02s             0           1  0.28s           2025-12-14T12:17:14
+/opt/airflow/dags/ingest_products.py                           0           1  0.26s           2025-12-14T12:17:15
+================================================================================
+[2025-12-14T12:18:15.980+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    220  0.03s             0           1  0.15s           2025-12-14T12:17:45
+/opt/airflow/dags/retrain.py            223  0.01s             0           1  0.11s           2025-12-14T12:17:45
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T12:17:45
+================================================================================
+[2025-12-14T12:18:46.578+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    235  0.04s             0           1  0.16s           2025-12-14T12:18:16
+/opt/airflow/dags/retrain.py            238  0.01s             0           1  0.12s           2025-12-14T12:18:16
+/opt/airflow/dags/ingest_products.py                           0           1  0.09s           2025-12-14T12:18:16
+================================================================================
+[2025-12-14T12:19:17.358+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py            253  0.01s             0           1  0.17s           2025-12-14T12:18:46
+/opt/airflow/dags/batch_inference.py    250  0.03s             0           1  0.17s           2025-12-14T12:18:46
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:18:46
+================================================================================
+[2025-12-14T12:19:48.280+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py            268  0.01s             0           1  0.34s           2025-12-14T12:19:17
+/opt/airflow/dags/batch_inference.py    265  0.03s             0           1  0.30s           2025-12-14T12:19:17
+/opt/airflow/dags/ingest_products.py                           0           1  0.19s           2025-12-14T12:19:17
+================================================================================
+[2025-12-14T12:20:18.783+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py            283  0.02s             0           1  0.14s           2025-12-14T12:19:48
+/opt/airflow/dags/batch_inference.py    280  0.08s             0           1  0.13s           2025-12-14T12:19:48
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T12:19:48
+================================================================================
+[2025-12-14T12:20:49.455+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    295  0.03s             0           1  0.31s           2025-12-14T12:20:19
+/opt/airflow/dags/retrain.py            298  0.01s             0           1  0.20s           2025-12-14T12:20:18
+/opt/airflow/dags/ingest_products.py                           0           1  0.15s           2025-12-14T12:20:19
+================================================================================
+[2025-12-14T12:21:11.956+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:21:12.019+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:21:20.154+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.18s           2025-12-14T12:20:49
+/opt/airflow/dags/batch_inference.py    310  0.03s             0           1  0.17s           2025-12-14T12:20:49
+/opt/airflow/dags/retrain.py            313  0.01s             0           1  0.13s           2025-12-14T12:20:49
+================================================================================
+[2025-12-14T12:21:50.808+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py    325  0.05s             0           1  0.18s           2025-12-14T12:21:20
+/opt/airflow/dags/retrain.py            328  0.01s             0           1  0.14s           2025-12-14T12:21:20
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:21:20
+================================================================================
+[2025-12-14T12:22:20.935+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.32s           2025-12-14T12:21:51
+/opt/airflow/dags/retrain.py                                   0           1  0.30s           2025-12-14T12:21:51
+/opt/airflow/dags/batch_inference.py                           0           1  0.15s           2025-12-14T12:22:06
+================================================================================
+[2025-12-14T12:22:51.643+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:22:22
+/opt/airflow/dags/retrain.py                                   0           1  0.15s           2025-12-14T12:22:22
+/opt/airflow/dags/batch_inference.py                           0           1  0.13s           2025-12-14T12:22:37
+================================================================================
+[2025-12-14T12:23:22.280+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.13s           2025-12-14T12:23:08
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:22:52
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:22:52
+================================================================================
+[2025-12-14T12:23:52.877+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T12:23:23
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:23:23
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T12:23:38
+================================================================================
+[2025-12-14T12:24:23.492+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:23:54
+/opt/airflow/dags/batch_inference.py                           0           1  0.12s           2025-12-14T12:24:09
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:23:54
+================================================================================
+[2025-12-14T12:24:54.145+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.17s           2025-12-14T12:24:24
+/opt/airflow/dags/retrain.py                                   0           1  0.16s           2025-12-14T12:24:24
+/opt/airflow/dags/batch_inference.py                           0           1  0.15s           2025-12-14T12:24:40
+================================================================================
+[2025-12-14T12:25:24.827+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.17s           2025-12-14T12:24:55
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:24:55
+/opt/airflow/dags/batch_inference.py                           0           1  0.10s           2025-12-14T12:25:10
+================================================================================
+[2025-12-14T12:25:55.496+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T12:25:26
+/opt/airflow/dags/ingest_products.py                           0           1  0.11s           2025-12-14T12:25:26
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T12:25:41
+================================================================================
+[2025-12-14T12:26:12.043+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:26:12.103+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:26:26.327+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.14s           2025-12-14T12:26:12
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:25:56
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:25:56
+================================================================================
+[2025-12-14T12:26:57.009+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:26:27
+/opt/airflow/dags/ingest_products.py                           0           1  0.12s           2025-12-14T12:26:27
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T12:26:42
+================================================================================
+[2025-12-14T12:27:27.766+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.18s           2025-12-14T12:26:58
+/opt/airflow/dags/retrain.py                                   0           1  0.16s           2025-12-14T12:26:58
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T12:27:13
+================================================================================
+[2025-12-14T12:31:41.867+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-14T12:31:41.881+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-14T12:31:41.901+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-14T12:31:41.908+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:31:42.357+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:31:43.126+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/batch_inference.py    160  0.45s             0           0
+/opt/airflow/dags/ingest_products.py                           0           0
+/opt/airflow/dags/retrain.py            163  0.26s             0           0
+================================================================================
+[2025-12-14T12:32:12.538+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.70s           2025-12-14T12:31:43
+/opt/airflow/dags/retrain.py                                   0           1  0.59s           2025-12-14T12:31:43
+/opt/airflow/dags/ingest_products.py                           0           1  0.31s           2025-12-14T12:31:43
+================================================================================
+[2025-12-14T12:32:42.426+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.55s           2025-12-14T12:32:14
+/opt/airflow/dags/batch_inference.py                           0           1  0.52s           2025-12-14T12:32:14
+/opt/airflow/dags/ingest_products.py                           0           1  0.21s           2025-12-14T12:32:14
+================================================================================
+[2025-12-14T12:33:12.353+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.45s           2025-12-14T12:32:44
+/opt/airflow/dags/retrain.py                                   0           1  0.42s           2025-12-14T12:32:44
+/opt/airflow/dags/ingest_products.py                           0           1  0.25s           2025-12-14T12:32:45
+================================================================================
+[2025-12-14T12:33:41.953+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.27s           2025-12-14T12:33:15
+/opt/airflow/dags/batch_inference.py                           0           1  0.25s           2025-12-14T12:33:15
+/opt/airflow/dags/retrain.py                                   0           1  0.24s           2025-12-14T12:33:15
+================================================================================
+[2025-12-14T12:34:11.570+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.32s           2025-12-14T12:33:46
+/opt/airflow/dags/batch_inference.py                           0           1  0.29s           2025-12-14T12:33:46
+/opt/airflow/dags/ingest_products.py                           0           1  0.18s           2025-12-14T12:33:46
+================================================================================
+[2025-12-14T12:34:41.690+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  2.47s           2025-12-14T12:34:21
+/opt/airflow/dags/ingest_products.py                           0           1  0.41s           2025-12-14T12:34:21
+/opt/airflow/dags/batch_inference.py                           0           1  -0.01s          2025-12-14T12:34:31
+================================================================================
+[2025-12-14T12:35:11.763+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  1.70s           2025-12-14T12:34:52
+/opt/airflow/dags/ingest_products.py                           0           1  1.44s           2025-12-14T12:34:54
+/opt/airflow/dags/batch_inference.py                           0           1  0.27s           2025-12-14T12:35:01
+================================================================================
+[2025-12-14T12:35:41.782+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.32s           2025-12-14T12:35:24
+/opt/airflow/dags/retrain.py                                   0           1  0.29s           2025-12-14T12:35:23
+/opt/airflow/dags/batch_inference.py                           0           1  0.25s           2025-12-14T12:35:32
+================================================================================
+[2025-12-14T12:36:12.121+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.24s           2025-12-14T12:36:03
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:35:53
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T12:35:54
+================================================================================
+[2025-12-14T12:36:41.982+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:36:42.048+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:36:43.093+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.20s           2025-12-14T12:36:33
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:36:25
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:36:24
+================================================================================
+[2025-12-14T12:37:13.795+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.12s           2025-12-14T12:37:04
+/opt/airflow/dags/ingest_products.py                           0           1  0.11s           2025-12-14T12:36:56
+/opt/airflow/dags/retrain.py                                   0           1  0.10s           2025-12-14T12:36:54
+================================================================================
+[2025-12-14T12:37:44.045+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.11s           2025-12-14T12:37:35
+/opt/airflow/dags/ingest_products.py                           0           1  0.10s           2025-12-14T12:37:26
+/opt/airflow/dags/retrain.py                                   0           1  0.10s           2025-12-14T12:37:25
+================================================================================
+[2025-12-14T12:38:14.339+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.20s           2025-12-14T12:37:56
+/opt/airflow/dags/retrain.py                                   0           1  0.16s           2025-12-14T12:37:55
+/opt/airflow/dags/batch_inference.py                           0           1  0.13s           2025-12-14T12:38:06
+================================================================================
+[2025-12-14T12:38:44.507+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.15s           2025-12-14T12:38:26
+/opt/airflow/dags/batch_inference.py                           0           1  0.13s           2025-12-14T12:38:36
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:38:25
+================================================================================
+[2025-12-14T12:39:15.505+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.31s           2025-12-14T12:38:57
+/opt/airflow/dags/retrain.py                                   0           1  0.28s           2025-12-14T12:38:56
+/opt/airflow/dags/batch_inference.py                           0           1  0.12s           2025-12-14T12:39:07
+================================================================================
+[2025-12-14T12:39:45.945+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.20s           2025-12-14T12:39:38
+/opt/airflow/dags/ingest_products.py                           0           1  0.20s           2025-12-14T12:39:28
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:39:26
+================================================================================
+[2025-12-14T12:41:17.513+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-14T12:41:17.515+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-14T12:41:17.517+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-14T12:41:17.520+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:41:17.609+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:41:17.947+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/batch_inference.py    160  0.23s             0           0
+/opt/airflow/dags/ingest_products.py                           0           0
+/opt/airflow/dags/retrain.py            163  0.17s             0           0
+================================================================================
+[2025-12-14T12:41:48.079+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.42s           2025-12-14T12:41:18
+/opt/airflow/dags/retrain.py                                   0           1  0.30s           2025-12-14T12:41:18
+/opt/airflow/dags/ingest_products.py                           0           1  0.24s           2025-12-14T12:41:18
+================================================================================
+[2025-12-14T12:42:17.699+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.41s           2025-12-14T12:41:48
+/opt/airflow/dags/retrain.py                                   0           1  0.26s           2025-12-14T12:41:48
+/opt/airflow/dags/ingest_products.py                           0           1  0.22s           2025-12-14T12:41:48
+================================================================================
+[2025-12-14T12:42:47.798+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.17s           2025-12-14T12:42:18
+/opt/airflow/dags/ingest_products.py                           0           1  0.14s           2025-12-14T12:42:18
+/opt/airflow/dags/retrain.py                                   0           1  0.10s           2025-12-14T12:42:18
+================================================================================
+[2025-12-14T12:43:18.792+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.25s           2025-12-14T12:42:49
+/opt/airflow/dags/ingest_products.py                           0           1  0.17s           2025-12-14T12:42:49
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T12:42:48
+================================================================================
+[2025-12-14T12:43:49.522+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.26s           2025-12-14T12:43:20
+/opt/airflow/dags/ingest_products.py                           0           1  0.19s           2025-12-14T12:43:20
+/opt/airflow/dags/retrain.py                                   0           1  0.15s           2025-12-14T12:43:19
+================================================================================
+[2025-12-14T12:44:20.702+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.35s           2025-12-14T12:43:50
+/opt/airflow/dags/ingest_products.py                           0           1  0.29s           2025-12-14T12:43:51
+/opt/airflow/dags/retrain.py                                   0           1  0.20s           2025-12-14T12:43:50
+================================================================================
+[2025-12-14T12:44:50.712+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.17s           2025-12-14T12:44:21
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:44:21
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:44:20
+================================================================================
+[2025-12-14T12:45:20.836+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.61s           2025-12-14T12:44:52
+/opt/airflow/dags/retrain.py                                   0           1  0.27s           2025-12-14T12:44:52
+/opt/airflow/dags/ingest_products.py                           0           1  0.24s           2025-12-14T12:44:52
+================================================================================
+[2025-12-14T12:45:50.507+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.42s           2025-12-14T12:45:23
+/opt/airflow/dags/batch_inference.py                           0           1  0.40s           2025-12-14T12:45:23
+/opt/airflow/dags/retrain.py                                   0           1  0.20s           2025-12-14T12:45:23
+================================================================================
+[2025-12-14T12:46:17.993+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:46:18.042+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:46:21.092+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           0           1  0.20s           2025-12-14T12:45:53
+/opt/airflow/dags/batch_inference.py                           0           1  0.17s           2025-12-14T12:45:53
+/opt/airflow/dags/retrain.py                                   0           1  0.10s           2025-12-14T12:45:53
+================================================================================
+[2025-12-14T12:46:51.734+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.26s           2025-12-14T12:46:24
+/opt/airflow/dags/ingest_products.py                           0           1  0.19s           2025-12-14T12:46:24
+/opt/airflow/dags/retrain.py                                   0           1  0.17s           2025-12-14T12:46:24
+================================================================================
+[2025-12-14T12:47:21.245+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.32s           2025-12-14T12:46:55
+/opt/airflow/dags/ingest_products.py                           0           1  0.21s           2025-12-14T12:46:55
+/opt/airflow/dags/retrain.py                                   0           1  0.17s           2025-12-14T12:46:54
+================================================================================
+[2025-12-14T12:47:51.253+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  0.61s           2025-12-14T12:47:25
+/opt/airflow/dags/batch_inference.py                           0           1  0.39s           2025-12-14T12:47:25
+/opt/airflow/dags/ingest_products.py                           0           1  -0.17s          2025-12-14T12:47:25
+================================================================================
+[2025-12-14T12:48:20.821+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.19s           2025-12-14T12:47:55
+/opt/airflow/dags/ingest_products.py                           0           1  0.17s           2025-12-14T12:47:56
+/opt/airflow/dags/retrain.py                                   0           1  0.11s           2025-12-14T12:47:56
+================================================================================
+[2025-12-14T12:48:51.241+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.22s           2025-12-14T12:48:26
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:48:26
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T12:48:26
+================================================================================
+[2025-12-14T12:49:20.747+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.26s           2025-12-14T12:48:57
+/opt/airflow/dags/ingest_products.py                           0           1  0.23s           2025-12-14T12:48:57
+/opt/airflow/dags/retrain.py                                   0           1  0.13s           2025-12-14T12:48:56
+================================================================================
+[2025-12-14T12:49:50.803+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           0           1  0.17s           2025-12-14T12:49:27
+/opt/airflow/dags/ingest_products.py                           0           1  0.16s           2025-12-14T12:49:27
+/opt/airflow/dags/retrain.py                                   0           1  0.10s           2025-12-14T12:49:27
+================================================================================
+[2025-12-14T12:50:20.498+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  1.72s           2025-12-14T12:49:59
+/opt/airflow/dags/ingest_products.py                           1           0  1.21s           2025-12-14T12:49:59
+/opt/airflow/dags/retrain.py                                   0           1  0.40s           2025-12-14T12:49:57
+================================================================================
+[2025-12-14T12:50:50.725+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  0.66s           2025-12-14T12:50:30
+/opt/airflow/dags/ingest_products.py                           1           0  0.46s           2025-12-14T12:50:30
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:50:28
+================================================================================
+[2025-12-14T12:51:18.012+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T12:51:18.068+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T12:51:20.174+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           1           0  0.56s           2025-12-14T12:51:01
+/opt/airflow/dags/batch_inference.py                           1           0  0.49s           2025-12-14T12:51:09
+/opt/airflow/dags/retrain.py                                   0           1  0.14s           2025-12-14T12:51:17
+================================================================================
+[2025-12-14T12:51:49.454+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  0.32s           2025-12-14T12:51:40
+/opt/airflow/dags/ingest_products.py                           1           0  0.29s           2025-12-14T12:51:31
+/opt/airflow/dags/retrain.py                                   0           1  0.12s           2025-12-14T12:51:47
+================================================================================
+[2025-12-14T12:52:19.321+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  0.48s           2025-12-14T12:52:11
+/opt/airflow/dags/ingest_products.py                           1           0  0.31s           2025-12-14T12:52:02
+/opt/airflow/dags/retrain.py                                   0           1  0.11s           2025-12-14T12:52:18
+================================================================================
+[2025-12-14T12:52:48.675+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  0.39s           2025-12-14T12:52:41
+/opt/airflow/dags/ingest_products.py                           1           0  0.38s           2025-12-14T12:52:33
+/opt/airflow/dags/retrain.py            510  0.01s             0           1  0.11s           2025-12-14T12:52:18
+================================================================================
+[2025-12-14T12:53:19.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           1           0  0.45s           2025-12-14T12:53:04
+/opt/airflow/dags/batch_inference.py                           1           0  0.38s           2025-12-14T12:53:12
+/opt/airflow/dags/retrain.py            525  0.01s             0           1  0.13s           2025-12-14T12:52:48
+================================================================================
+[2025-12-14T12:53:48.877+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_products.py                           1           0  0.37s           2025-12-14T12:53:35
+/opt/airflow/dags/batch_inference.py                           1           0  0.37s           2025-12-14T12:53:42
+/opt/airflow/dags/retrain.py                                   0           1  0.11s           2025-12-14T12:53:19
+================================================================================
+[2025-12-14T12:54:18.796+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/batch_inference.py                           1           0  0.39s           2025-12-14T12:54:13
+/opt/airflow/dags/ingest_products.py                           1           0  0.29s           2025-12-14T12:54:05
+/opt/airflow/dags/retrain.py                                   0           1  0.15s           2025-12-14T12:53:49
+================================================================================
+[2025-12-14T12:54:25.973+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-12-14T13:00:28.356+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-12-14T13:00:28.371+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-12-14T13:00:28.376+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-12-14T13:00:28.380+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-12-14T13:00:28.673+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-12-14T13:00:29.030+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/batch_inference.py    198  0.11s             0           0
+/opt/airflow/dags/ingest_products.py                           0           0
+/opt/airflow/dags/retrain.py            195  0.15s             0           0
+================================================================================
+[2025-12-14T13:00:59.650+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  4.51s           2025-12-14T13:00:33
+/opt/airflow/dags/batch_inference.py                           1           0  1.18s           2025-12-14T13:00:30
+/opt/airflow/dags/ingest_products.py                           1           0  0.62s           2025-12-14T13:00:30
+================================================================================
+[2025-12-14T13:01:29.645+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  1.73s           2025-12-14T13:01:05
+/opt/airflow/dags/batch_inference.py                           1           0  0.45s           2025-12-14T13:01:01
+/opt/airflow/dags/ingest_products.py                           1           0  0.39s           2025-12-14T13:01:01
+================================================================================
+[2025-12-14T13:02:00.042+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  1.99s           2025-12-14T13:01:38
+/opt/airflow/dags/batch_inference.py                           1           0  0.47s           2025-12-14T13:01:31
+/opt/airflow/dags/ingest_products.py                           1           0  0.33s           2025-12-14T13:01:32
+================================================================================
+[2025-12-14T13:02:30.548+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  1.69s           2025-12-14T13:02:10
+/opt/airflow/dags/batch_inference.py                           1           0  0.41s           2025-12-14T13:02:02
+/opt/airflow/dags/ingest_products.py                           1           0  0.36s           2025-12-14T13:02:02
+================================================================================
+[2025-12-14T13:03:00.393+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/retrain.py                                   0           1  1.67s           2025-12-14T13:02:42
+/opt/airflow/dags/batch_inference.py                           1           0  0.48s           2025-12-14T13:02:33
+/opt/airflow/dags/ingest_products.py                           1           0  0.43s           2025-12-14T13:02:33
+================================================================================
